@@ -1,0 +1,34 @@
+{
+  "compras": [
+    {
+      "item": "Macarrão",
+      "quantidade": 7,
+      "id": 3
+    },
+    {
+      "item": "Frango",
+      "quantidade": 2,
+      "id": 4
+    },
+    {
+      "item": "Farinha",
+      "quantidade": 1,
+      "id": 5
+    },
+    {
+      "item": "Ovos",
+      "quantidade": 30,
+      "id": 6
+    },
+    {
+      "item": "Arroz",
+      "quantidade": 5,
+      "id": 8
+    },
+    {
+      "item": "Molho",
+      "quantidade": 5,
+      "id": 10
+    }
+  ]
+}
