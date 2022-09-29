@@ -20,6 +20,12 @@ function inserir () {
 }
 
 async function excluir (id) {
+    let resposta = confirm('Você tem certeza?');
+
+    if (resposta !== true) {
+        return;
+    }
+
     await fetch('http://localhost:8000/compras/'+id, {
         method: 'DELETE'
     });
@@ -42,6 +48,7 @@ function atualizarLista() {
                     <td>${cadaItem.item}</td>
                     <td>${cadaItem.quantidade}</td>
                     <td>
+                        <button class="btn btn-warning btn-sm">Editar</button>
                         <button class="btn btn-danger" onclick="excluir(${cadaItem.id})">
                             Excluir
                         </button>
