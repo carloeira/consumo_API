@@ -11,7 +11,7 @@
     <br>
     <h1>Lista de compras</h1>
     <hr>
-        <!-- Button trigger modal -->
+<!-- Button trigger modal -->
 <div class="text-end">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Novo Item
@@ -47,6 +47,27 @@
             </div>
         </form>
       </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEditar" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Editar Item:</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form id="formEditar" onsubmit="editar()">
+            <input type="hidden" id="inputEditarId">
+
+            <label for="inputEditarItem">Nome do Item</label>
+            <input type="text" id="inputEditarItem" class="form-control mb-3">
+
+            <label for="inputEditarQuantidade">Quantidade</label>
+            <input type="text" id="inputEditarQuantidade" class="form-control mb-3">
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
     </div>
   </div>
   <!-- JavaScript Bundle with Popper -->

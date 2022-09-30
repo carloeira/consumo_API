@@ -1,34 +1,29 @@
 {
   "compras": [
     {
-      "item": "Macarrão",
-      "quantidade": 7,
-      "id": 3
+      "item": "Arroz",
+      "quantidade": "10",
+      "id": 7
     },
     {
-      "item": "Frango",
-      "quantidade": 2,
-      "id": 4
+      "item": "Molho",
+      "quantidade": 10,
+      "id": 8
     },
     {
-      "item": "Farinha",
-      "quantidade": 1,
-      "id": 5
+      "item": "Feijão",
+      "quantidade": "20",
+      "id": 9
     },
     {
       "item": "Ovos",
       "quantidade": 30,
-      "id": 6
+      "id": 10
     },
     {
       "item": "Arroz",
-      "quantidade": 5,
-      "id": 8
-    },
-    {
-      "item": "Molho",
-      "quantidade": 5,
-      "id": 10
+      "quantidade": 15,
+      "id": 11
     }
   ]
 }
