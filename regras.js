@@ -4,8 +4,10 @@ function marcarTodos() {
     let todos = document.querySelectorAll('[data-check="acao"]');
 
     todos.forEach((cadaCheck) => {
-        cadaCheck.checked = true;
+        cadaCheck.checked = checked_all.checked;
     });
+
+    acionarBotaoExcluir();
 }
 
 function buscarParaEditar(id) {
@@ -87,7 +89,7 @@ function atualizarLista() {
         lista.forEach(function (cadaItem) {
             tabela_compras.innerHTML += `
                 <tr>
-                    <td><input data-check="acao" type="checkbox"> </td>
+                    <td><input onclick="acionarBotaoExcluir()" data-check="acao" type="checkbox"> </td>
                     <td>${cadaItem.id}</td>
                     <td>${cadaItem.item}</td>
                     <td>${cadaItem.quantidade}</td>
@@ -99,7 +101,7 @@ function atualizarLista() {
                             Excluir
                         </button>
                 </tr>
-                
+
                 `
         })
     })

@@ -17,7 +17,12 @@
     <input id="input_busca" onkeyup="filtrar()" class="form-control" placeholder="Buscar" type="text">
   </div>
   <div class="col text-end">
-    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <div class="col text-end">
+      <button id="btn_remove_all" class="btn btn-outline-danger d-none">
+          Excluir Selecionados
+      </button>
+    </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Novo Item
     </button>
   </div>
@@ -25,7 +30,7 @@
     <table class="table table-striped table-hover">
         <thead>
             <tr>
-                <th><input onclick="marcarTodos()" type="checkbox"> </th>
+                <th><input id="checked_all" onclick="marcarTodos()" type="checkbox"> </th>
                 <th>ID</th>
                 <th>Item</th>
                 <th>Quantidade</th>
@@ -80,5 +85,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="regras.js"></script>
     <script src="filtrar.js"></script>
+    <script src="excluir.js"></script>
 </body>
 </html>
