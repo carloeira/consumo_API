@@ -89,7 +89,7 @@ function atualizarLista() {
         lista.forEach(function (cadaItem) {
             tabela_compras.innerHTML += `
                 <tr>
-                    <td><input onclick="acionarBotaoExcluir()" data-check="acao" type="checkbox"> </td>
+                    <td><input onclick="acionarBotaoExcluir()" value="${cadaItem.id}" data-check="acao" type="checkbox"> </td>
                     <td>${cadaItem.id}</td>
                     <td>${cadaItem.item}</td>
                     <td>${cadaItem.quantidade}</td>

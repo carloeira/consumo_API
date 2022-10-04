@@ -18,13 +18,15 @@
   </div>
   <div class="col text-end">
     <div class="col text-end">
-      <button id="btn_remove_all" class="btn btn-outline-danger d-none">
-          Excluir Selecionados
+      <button onclick="excluirSelecionados()" id="btn_remove_all" class="btn btn-outline-danger d-none">
+          Excluir Selecionado(s)
       </button>
     </div>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Novo Item
     </button>
+    </div>
   </div>
 </div>
     <table class="table table-striped table-hover">

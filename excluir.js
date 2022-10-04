@@ -15,3 +15,20 @@ function acionarBotaoExcluir() {
     }
 }
 
+function excluirSelecionados() {
+    if (false === confirm('Tem certeza?')) {
+        return;
+    }
+
+    let todosChecks = document.querySelectorAll('[data-check="acao"]');
+
+    todosChecks.forEach(async (cadaCheck) => {
+        if (cadaCheck.checked === true) {
+            await fetch(API_URL+'/compras/'+cadaCheck.value, {
+                method: 'DELETE'
+            })
+        }
+    });
+
+    atualizarLista();
+}
